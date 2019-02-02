@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5BCCE15B-BABC-4BB5-B92C-05954E69D89A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Karamelle</RootNamespace>
+    <AssemblyName>Karamelle</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GridExtension">
+      <HintPath>..\..\..\..\..\Desktop\Sistema Sismeco\SISMECO\CEDIM 11-1\CEDIM 05-06\CEDIM v2\WindowsFormsApplication1\GridExtension\bin\Debug\GridExtension.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActualizarPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActualizarPedido.Designer.cs">
+      <DependentUpon>ActualizarPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cargo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cargo.Designer.cs">
+      <DependentUpon>Cargo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente.Designer.cs">
+      <DependentUpon>Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio.Designer.cs">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Insumo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Insumo.Designer.cs">
+      <DependentUpon>Insumo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaCliente.Designer.cs">
+      <DependentUpon>ListaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaDecorador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaDecorador.Designer.cs">
+      <DependentUpon>ListaDecorador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListadoDecorador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListadoDecorador.Designer.cs">
+      <DependentUpon>ListadoDecorador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListadoPastelero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListadoPastelero.Designer.cs">
+      <DependentUpon>ListadoPastelero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaIngredientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaIngredientes.Designer.cs">
+      <DependentUpon>ListaIngredientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaInsumos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaInsumos.Designer.cs">
+      <DependentUpon>ListaInsumos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaPastel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaPastel.Designer.cs">
+      <DependentUpon>ListaPastel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaPastelero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaPastelero.Designer.cs">
+      <DependentUpon>ListaPastelero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaPedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaPedidos.Designer.cs">
+      <DependentUpon>ListaPedidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Negocio\Cargo.cs" />
+    <Compile Include="Negocio\Conexion.cs" />
+    <Compile Include="Negocio\Detalle.cs" />
+    <Compile Include="Negocio\Insumos.cs" />
+    <Compile Include="Negocio\ListaIngrediente.cs" />
+    <Compile Include="Negocio\Opciones.cs" />
+    <Compile Include="Negocio\Pastel.cs" />
+    <Compile Include="Negocio\Pedidos.cs" />
+    <Compile Include="Negocio\Persona.cs" />
+    <Compile Include="Negocio\Reportes.cs" />
+    <Compile Include="Negocio\Tamaño.cs" />
+    <Compile Include="Negocio\Usuario.cs" />
+    <Compile Include="Opciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Opciones.Designer.cs">
+      <DependentUpon>Opciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pastel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pastel.Designer.cs">
+      <DependentUpon>Pastel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos.Designer.cs">
+      <DependentUpon>Pedidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal.Designer.cs">
+      <DependentUpon>Personal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reportes\frReporte1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frReporte1.Designer.cs">
+      <DependentUpon>frReporte1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Reporte2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Reporte2.Designer.cs">
+      <DependentUpon>Reporte2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Reporte3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Reporte3.Designer.cs">
+      <DependentUpon>Reporte3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Reportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Reportes.Designer.cs">
+      <DependentUpon>Reportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tamaño.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tamaño.Designer.cs">
+      <DependentUpon>Tamaño.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VerPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerPedido.Designer.cs">
+      <DependentUpon>VerPedido.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ActualizarPedido.resx">
+      <DependentUpon>ActualizarPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cargo.resx">
+      <DependentUpon>Cargo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente.resx">
+      <DependentUpon>Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Insumo.resx">
+      <DependentUpon>Insumo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaCliente.resx">
+      <DependentUpon>ListaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaDecorador.resx">
+      <DependentUpon>ListaDecorador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListadoDecorador.resx">
+      <DependentUpon>ListadoDecorador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListadoPastelero.resx">
+      <DependentUpon>ListadoPastelero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaIngredientes.resx">
+      <DependentUpon>ListaIngredientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaInsumos.resx">
+      <DependentUpon>ListaInsumos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaPastel.resx">
+      <DependentUpon>ListaPastel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaPastelero.resx">
+      <DependentUpon>ListaPastelero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaPedidos.resx">
+      <DependentUpon>ListaPedidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Opciones.resx">
+      <DependentUpon>Opciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pastel.resx">
+      <DependentUpon>Pastel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos.resx">
+      <DependentUpon>Pedidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal.resx">
+      <DependentUpon>Personal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reportes\frReporte1.resx">
+      <DependentUpon>frReporte1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reporte2.resx">
+      <DependentUpon>Reporte2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reporte3.resx">
+      <DependentUpon>Reporte3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reportes.resx">
+      <DependentUpon>Reportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tamaño.resx">
+      <DependentUpon>Tamaño.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerPedido.resx">
+      <DependentUpon>VerPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Karamelle.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
